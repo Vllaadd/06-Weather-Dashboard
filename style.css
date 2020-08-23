@@ -1,0 +1,16 @@
+header{
+    text-align: center;
+}
+
+.row{
+    margin: 5px;
+}
+    
+#users-list{
+    border: solid 1px black;
+}
+
+.card-body{
+    padding: 25px;
+    text-align: center;
+}
