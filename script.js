@@ -89,8 +89,7 @@ var apiKey = "166a433c57516f51dfab1f7edaed8413";
       SubmitBtn.addEventListener("click", addUsersInput);
 
 
-//UV index
-var apiKey = "166a433c57516f51dfab1f7edaed8413";  
+//UV index 
     function uvIndex(lon,lat) {
       $.ajax({
         url: "http://api.openweathermap.org/data/2.5/uvi?appid=" + apiKey + "&lat=" + lat + "&lon=" + lon,
