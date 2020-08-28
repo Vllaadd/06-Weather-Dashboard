@@ -15,7 +15,6 @@ var apiKey = "166a433c57516f51dfab1f7edaed8413";
           var userInput = $("#user-input").val();
           fiveDayForecast(userInput);
         });
-  
 
 //current forecast
     function getWeather(){
@@ -58,7 +57,7 @@ var apiKey = "166a433c57516f51dfab1f7edaed8413";
           var cardEl = $("<div>").addClass("card text-white bg-primary m-3");
           var cardBody = $("<div>").addClass("card-body");
           var cardTitle = $("<h5>").addClass("card-title").text(new Date(data.list[i].dt_txt).toLocaleDateString());
-          var img = $("<img>").attr("src", "http://openweathermap.org/img/w/" + data.list[i].weather[0].icon + ".png");
+          var img = $("<img>").attr("src", "https://openweathermap.org/img/w/" + data.list[i].weather[0].icon + ".png");
           var cardText1 = $("<p>").addClass("card-text").text("Temp: " + data.list[i].main.temp_max + " °F");        
           var cardText2 = $("<p>").addClass("card-text").text("Humidity: " + data.list[i].main.humidity + "%");   
       colEl.append(cardEl.append(cardBody.append(cardTitle, img, cardText1, cardText2)));
@@ -92,7 +91,7 @@ var apiKey = "166a433c57516f51dfab1f7edaed8413";
 //UV index 
     function uvIndex(lon,lat) {
       $.ajax({
-        url: "http://api.openweathermap.org/data/2.5/uvi?appid=" + apiKey + "&lat=" + lat + "&lon=" + lon,
+        url: "https://api.openweathermap.org/data/2.5/uvi?appid=" + apiKey + "&lat=" + lat + "&lon=" + lon,
         type: "GET",
         dataType: "json",
         success:function(data){
