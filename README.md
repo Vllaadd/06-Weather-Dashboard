@@ -6,5 +6,6 @@ This is a weather dashboard that runs in the browser and feature dynamically upd
 # Technologies used
 * HTML
 * CSS
+* Bootstrap
 * JavaScript
 * Third Party API
