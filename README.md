@@ -9,5 +9,5 @@ This is a weather dashboard that runs in the browser and feature dynamically upd
 * Bootstrap
 * JavaScript
 * jQuery
-* ajax
+* Ajax
 * Third Party API
