@@ -1,6 +1,6 @@
 var apiKey = "166a433c57516f51dfab1f7edaed8413";  
 
-//date
+//DATE
     var myDate = new Date();
     var year = myDate.getFullYear();
     var month = myDate.getMonth();
@@ -16,7 +16,7 @@ var apiKey = "166a433c57516f51dfab1f7edaed8413";
           fiveDayForecast(userInput);
         });
 
-//current forecast
+//CURRENT FORECAST 
     function getWeather(){
         var city = $("#user-input").val();                                                                                                          
             $.ajax({
@@ -39,6 +39,7 @@ var apiKey = "166a433c57516f51dfab1f7edaed8413";
   var key = "166a433c57516f51dfab1f7edaed8413";
   var url = "https://api.openweathermap.org/data/2.5/forecast";
 
+//FIVE DAY FORECAST
   function fiveDayForecast(userInput){
     $.ajax({
       url: url,
@@ -69,7 +70,7 @@ var apiKey = "166a433c57516f51dfab1f7edaed8413";
   });
 
 
-  //history
+  //SEARCH HISTORY
       var cityList = [userCity];
       var userList = document.getElementById("search-list");
       var userCity = document.getElementById("user-input");
@@ -88,7 +89,7 @@ var apiKey = "166a433c57516f51dfab1f7edaed8413";
       SubmitBtn.addEventListener("click", addUsersInput);
 
 
-//UV index 
+//UV INDEX 
     function uvIndex(lon,lat) {
       $.ajax({
         url: "https://api.openweathermap.org/data/2.5/uvi?appid=" + apiKey + "&lat=" + lat + "&lon=" + lon,
